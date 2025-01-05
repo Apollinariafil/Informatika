@@ -3,6 +3,7 @@ from turtle import *
 size = 30
 tracer(2)
 
+
 down()
 
 for i in range(5):
