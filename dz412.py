@@ -1,5 +1,7 @@
 from itertools import *
 
+#3
+#4  
 
 def u(a, b, c, d):
     return (c and (a or d) and (d <= b))
