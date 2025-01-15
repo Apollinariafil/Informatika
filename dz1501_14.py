@@ -14,12 +14,12 @@
 #         s = s.replace("222", "88", 1)
 #     else:
 #         s = s.replace("8888", "22", 1)
-F = [1] * 5000
+F = [1] * 9000
 for n in range(len(F)):
     if n > 3456:
         F[n] = n + 1
     if n <= 3456 and n % 3 == 0:
         F[n] = F[n + 1] + F[n + 2]
-    if n <= 3456 and not(n % 3 == 0):
+    if n <= 3456 and n % 3 != 0:
         F[n] = F[n + (n % 3)] + 2
 print(F[12]- F[17])
