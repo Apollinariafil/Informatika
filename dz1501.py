@@ -1,3 +1,4 @@
+from sys import setrecursionlimit
 
 # Увеличение глубины рекурсии до 3000
 setrecursionlimit(3000)
