@@ -1,6 +1,6 @@
-import sys
+from sys import setrecursionlimit
 # Увеличение глубины рекурсии до 3000
-sys.setrecursionlimit(3000)
+setrecursionlimit(3000)
 
 def F(n):
     if n > 3456:
