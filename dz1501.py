@@ -1,9 +1,6 @@
-# from functools import lru_cache
-# @lru_cache(None)
 
-import sys
 # Увеличение глубины рекурсии до 3000
-sys.setrecursionlimit(3000)
+setrecursionlimit(3000)
 
 
 def F(n):
