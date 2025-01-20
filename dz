@@ -30,6 +30,7 @@ for s in range(1, 59):
         print(s) """
 
 
+
 def f(x, y, p):  # 20 задание
     if x + y >= 65 and p == 4:
         return True
