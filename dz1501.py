@@ -1,4 +1,4 @@
-from sys import setrecursionlimit
+""" from sys import setrecursionlimit
 
 # Увеличение глубины рекурсии до 3000
 setrecursionlimit(3000)
@@ -14,7 +14,7 @@ def F(n):
 
 
 print(F(12)-F(17))
-
+ """
 
 # F = [1] * 5000
 # for n in range(len(F)):
@@ -35,3 +35,19 @@ print(F(12)-F(17))
 #     if n < 2025:
 #         F[n] = n + 3 + F[n + 3]
 # print(F[23])
+
+
+
+from sys import setrecursionlimit
+
+setrecursionlimit(3000)
+
+
+def F(n):
+    if n < 4:
+        return 3
+    if n > 3:
+        return 3 * F(n - 3)
+
+
+print(F(3333)/F(3300))
