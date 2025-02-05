@@ -16,19 +16,28 @@
 #     if f(s, 1, 1):
 #         print(s)
 
-f = open('17.txt')
-s = [int(i) for i in f]
-su = []
-ma = -float('inf')
-for i in s:
-    if i % 100 == 25:
-        ma = max(m, i)
-for g in range(len(s)-2):
-    tres = [s[j], s[j + 1], s[j + 2]]
-    cnt = 0
-    for k in tres:
-        if len(str(abs(k))) == 4:
-            cnt += 1
-    if sum(tres) <= ma and cnt <= 2:
-        su.append(sum(tres))
-print(len(su), max(su))
+# f = open('17.txt')
+# s = [int(i) for i in f]
+# su = []
+# ma = -float('inf')
+# for i in s:
+#     if i % 100 == 25:
+#         ma = max(m, i)
+# for g in range(len(s)-2):
+#     tres = [s[j], s[j + 1], s[j + 2]]
+#     cnt = 0
+#     for k in tres:
+#         if len(str(abs(k))) == 4:
+#             cnt += 1
+#     if sum(tres) <= ma and cnt <= 2:
+#         su.append(sum(tres))
+# print(len(su), max(su))
+
+def f(x, y):
+  if x < y:
+    return 0
+  if x == y:
+    return 1
+  else:
+    return f(x - 2, y) + f(x - 5, y)
+  print(f(24, 3))
