@@ -23,7 +23,3 @@
 #     if n <= 3456 and n % 3 != 0:
 #         F[n] = F[n + (n % 3)] + 2
 # print(F[12]- F[17])
-from fnmatch import *
-for i in range(0, 10**10, 1917):
-  if fnmatch(str(x), '3?12?14*5'):
-    print(x, x // 1917)
